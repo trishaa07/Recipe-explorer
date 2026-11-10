@@ -1,0 +1,159 @@
+
+:root {
+  --mint: #2f7d6b;
+  --mint-light: #e8f6f0;
+  --border: #dbe7e2;
+  --text: #1f2937;
+  --muted: #64748b;}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;}
+.nav-link {
+  color: #64748b;
+  transition: color 0.2s ease;}
+
+.nav-link:hover,
+.nav-active {
+  color: var(--mint);}
+.control {
+  min-height: 46px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: white;
+  color: #334155;
+  padding: 0 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;}
+
+.control:focus {
+  border-color: var(--mint);
+  box-shadow: 0 0 0 3px rgba(47, 125, 107, 0.12);}
+
+.meal-chip {
+  min-height: 38px;
+  padding: 0 15px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: white;
+  color: #64748b;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;}
+
+.meal-chip:hover,
+.meal-chip.active {
+  background: var(--mint);
+  border-color: var(--mint);
+  color: white;}
+.secondary-button,
+.primary-button {
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  cursor: pointer;}
+
+.secondary-button {
+  border: 1px solid var(--border);
+  background: white;
+  color: #475569;}
+
+.primary-button {
+  background: var(--mint);
+  color: white;
+  align-items: center;
+  justify-content: center;}
+
+.recipe-card {
+  border: 3px solid #2f7d6b;
+  border-radius: 18px;
+  background: white;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;}
+
+.recipe-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #edf7f3;
+  color: #286d5d;}
+
+.modal-backdrop {
+  background: rgba(15, 23, 42, 0.58);}
+
+.modal-panel {
+  box-shadow: 0 25px 70px rgba(15, 23, 42, 0.25);}
+
+.section-heading {
+  font-size: 18px;
+  font-weight: 700;}
+
+.instruction-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #475569;
+  line-height: 1.6;}
+
+.instruction-number {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--mint-light);
+  color: var(--mint);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;}
+
+.feature-card {
+  background: white;
+  border: 1px solid #e5ebe8;
+  border-radius: 18px;
+  padding: 24px;}
+
+.feature-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;}
+
+.feature-card p {
+  margin-top: 8px;
+  color: #64748b;
+  line-height: 1.6;}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--mint-light);
+  color: var(--mint);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: 700;}
+
+.about-image-wrap {
+  border-radius: 24px;
+  overflow: hidden;}
+
+.mission-box {
+  background: var(--mint-light);
+  border-radius: 24px;
+  padding: 32px;}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About • Recipe Explorer</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mint: {
+              50: "#F4FBF8",
+              100: "#E8F6F0",
+              200: "#D6EFE6",
+              300: "#BFE4D6",
+              500: "#2F7D6B",
+              600: "#236756",
+              700: "#1D5548"
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen bg-white text-slate-800">
+  <header class="bg-mint-100 border-b border-mint-200 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3 font-bold text-lg">
+       <span class="text-2xl" aria-hidden="true"><i class="fa-solid fa-utensils"></i></span>
+       <span>Recipe Explorer</span>
+      </a>
+    <nav class="flex items-center gap-6 text-sm font-medium">
+      <a href="index.html" class="nav-link">Home</a>
+       <a href="about.html" class="nav-link nav-active">About</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="uppercase tracking-[0.18em] text-sm font-semibold text-mint-600">
+         About Recipe Explorer
+          </p>
+          <h1 class="mt-3 text-4xl sm:text-5xl font-bold tracking-tight">
+            Find your next favourite recipe.
+          </h1>
+          <p class="mt-5 text-lg leading-8 text-slate-500 max-w-xl">
+            Recipe Explorer makes it easy to discover recipes, compare cooking time,
+            filter by meal type and cuisine, and open complete instructions in one clean place.
+          </p>
+     <a href="index.html" class="primary-button inline-flex mt-7">
+            Start Exploring
+          </a>
+    </div>
+        <div class="about-image-wrap">
+       <img
+            src="https://cdn.dummyjson.com/recipe-images/25.webp"
+            alt="Recipe dish"
+            class="w-full h-80 object-cover rounded-3xl"
+       />
+        </div>
+      </div>
+    </section>
+    <section class="bg-mint-50 border-y border-mint-100">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
+        <div class="text-center mb-9">
+      <h2 class="text-3xl font-bold">Features</h2>
+       <p class="mt-2 text-slate-500">Everything you need to explore recipes quickly.</p>
+        </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <article class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3>Discover Recipes</h3>
+        <p>Browse a dynamic collection of recipes from the API.</p>
+          </article>
+          <article class="feature-card">
+         <div class="feature-icon"><i class="fa-solid fa-bars"></i></div>
+            <h3>Filter & Sort</h3>
+            <p>Find recipes using meal type, cuisine, difficulty and sorting.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+            <h3>Easy to Follow</h3>
+            <p>Open any recipe to see ingredients and numbered instructions.</p>
+       </article>
+     <article class="feature-card">
+            <div class="feature-icon"><i class="fa-regular fa-circle-dot"></i></div>
+     <h3>Multiple Cuisines</h3>
+            <p>Explore recipes from different cuisines in one place.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
+      <div class="mission-box">
+        <h2 class="text-3xl font-bold">Our Mission</h2>
+  <p class="mt-4 max-w-3xl text-slate-600 leading-8">
+          Our mission is to make recipe discovery simple, visual and useful.
+          Instead of searching through many pages, users can browse, filter and
+          understand a recipe from one clean interface.
+        </p>
+      </div>
+    </section>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
